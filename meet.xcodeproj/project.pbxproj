@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB01B7051BC0F8FC00C6E72F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01B7031BC0F8FC00C6E72F /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		AB01B7061BC0F8FC00C6E72F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01B7041BC0F8FC00C6E72F /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		AB584B8C1BC0CDE200B8D3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584B8B1BC0CDE200B8D3CF /* AppDelegate.swift */; };
 		AB584B8E1BC0CDE200B8D3CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584B8D1BC0CDE200B8D3CF /* ViewController.swift */; };
 		AB584B911BC0CDE200B8D3CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB584B8F1BC0CDE200B8D3CF /* Main.storyboard */; };
 		AB584B931BC0CDE200B8D3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB584B921BC0CDE200B8D3CF /* Assets.xcassets */; };
 		AB584B961BC0CDE200B8D3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB584B941BC0CDE200B8D3CF /* LaunchScreen.storyboard */; };
-		AB584B9F1BC0D04C00B8D3CF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584B9D1BC0D04C00B8D3CF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		AB584BA01BC0D04C00B8D3CF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584B9E1BC0D04C00B8D3CF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		AB584BA21BC0D08B00B8D3CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BA11BC0D08B00B8D3CF /* AudioToolbox.framework */; };
 		AB584BA41BC0D09200B8D3CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BA31BC0D09200B8D3CF /* CFNetwork.framework */; };
 		AB584BA61BC0D09900B8D3CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BA51BC0D09900B8D3CF /* CoreGraphics.framework */; };
@@ -27,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB01B7031BC0F8FC00C6E72F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AB01B7041BC0F8FC00C6E72F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AB584B881BC0CDE200B8D3CF /* meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB584B8B1BC0CDE200B8D3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB584B8D1BC0CDE200B8D3CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +36,6 @@
 		AB584B921BC0CDE200B8D3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB584B951BC0CDE200B8D3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB584B971BC0CDE200B8D3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB584B9D1BC0D04C00B8D3CF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = meet/Bolts.framework; sourceTree = "<group>"; };
-		AB584B9E1BC0D04C00B8D3CF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = meet/Parse.framework; sourceTree = "<group>"; };
 		AB584BA11BC0D08B00B8D3CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AB584BA31BC0D09200B8D3CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AB584BA51BC0D09900B8D3CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,12 +59,12 @@
 				AB584BAE1BC0D0B700B8D3CF /* StoreKit.framework in Frameworks */,
 				AB584BAC1BC0D0B000B8D3CF /* Security.framework in Frameworks */,
 				AB584BAA1BC0D0A800B8D3CF /* QuartzCore.framework in Frameworks */,
+				AB01B7051BC0F8FC00C6E72F /* Bolts.framework in Frameworks */,
+				AB01B7061BC0F8FC00C6E72F /* Parse.framework in Frameworks */,
 				AB584BA81BC0D0A100B8D3CF /* CoreLocation.framework in Frameworks */,
 				AB584BA61BC0D09900B8D3CF /* CoreGraphics.framework in Frameworks */,
 				AB584BA41BC0D09200B8D3CF /* CFNetwork.framework in Frameworks */,
 				AB584BA21BC0D08B00B8D3CF /* AudioToolbox.framework in Frameworks */,
-				AB584BA01BC0D04C00B8D3CF /* Parse.framework in Frameworks */,
-				AB584B9F1BC0D04C00B8D3CF /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +106,8 @@
 		AB584BB31BC0D10100B8D3CF /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				AB584B9D1BC0D04C00B8D3CF /* Bolts.framework */,
-				AB584B9E1BC0D04C00B8D3CF /* Parse.framework */,
+				AB01B7031BC0F8FC00C6E72F /* Bolts.framework */,
+				AB01B7041BC0F8FC00C6E72F /* Parse.framework */,
 				AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */,
 				AB584BAF1BC0D0C500B8D3CF /* SystemConfiguration.framework */,
 				AB584BAD1BC0D0B700B8D3CF /* StoreKit.framework */,
@@ -309,6 +309,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/meet",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = meet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -327,6 +328,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/meet",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = meet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,6 +357,7 @@
 				AB584B9C1BC0CDE200B8D3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
