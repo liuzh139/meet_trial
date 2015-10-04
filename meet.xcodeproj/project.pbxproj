@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB01B7051BC0F8FC00C6E72F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01B7031BC0F8FC00C6E72F /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		AB01B7061BC0F8FC00C6E72F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB01B7041BC0F8FC00C6E72F /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		AB584B8C1BC0CDE200B8D3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584B8B1BC0CDE200B8D3CF /* AppDelegate.swift */; };
 		AB584B8E1BC0CDE200B8D3CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584B8D1BC0CDE200B8D3CF /* ViewController.swift */; };
 		AB584B911BC0CDE200B8D3CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB584B8F1BC0CDE200B8D3CF /* Main.storyboard */; };
@@ -24,11 +22,11 @@
 		AB584BB01BC0D0C500B8D3CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BAF1BC0D0C500B8D3CF /* SystemConfiguration.framework */; };
 		AB584BB21BC0D0D300B8D3CF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */; };
 		AB584BB91BC0D77200B8D3CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ABCCF02F1BC118B900B50AAF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCCF02D1BC118B900B50AAF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		ABCCF0301BC118B900B50AAF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCCF02E1BC118B900B50AAF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB01B7031BC0F8FC00C6E72F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		AB01B7041BC0F8FC00C6E72F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AB584B881BC0CDE200B8D3CF /* meet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB584B8B1BC0CDE200B8D3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB584B8D1BC0CDE200B8D3CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		AB584BB41BC0D16300B8D3CF /* meet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "meet-Bridging-Header.h"; sourceTree = "<group>"; };
 		AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ABCCF02D1BC118B900B50AAF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ABCCF02E1BC118B900B50AAF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 				AB584BAE1BC0D0B700B8D3CF /* StoreKit.framework in Frameworks */,
 				AB584BAC1BC0D0B000B8D3CF /* Security.framework in Frameworks */,
 				AB584BAA1BC0D0A800B8D3CF /* QuartzCore.framework in Frameworks */,
-				AB01B7051BC0F8FC00C6E72F /* Bolts.framework in Frameworks */,
-				AB01B7061BC0F8FC00C6E72F /* Parse.framework in Frameworks */,
+				ABCCF02F1BC118B900B50AAF /* Bolts.framework in Frameworks */,
+				ABCCF0301BC118B900B50AAF /* Parse.framework in Frameworks */,
 				AB584BA81BC0D0A100B8D3CF /* CoreLocation.framework in Frameworks */,
 				AB584BA61BC0D09900B8D3CF /* CoreGraphics.framework in Frameworks */,
 				AB584BA41BC0D09200B8D3CF /* CFNetwork.framework in Frameworks */,
@@ -106,8 +106,8 @@
 		AB584BB31BC0D10100B8D3CF /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				AB01B7031BC0F8FC00C6E72F /* Bolts.framework */,
-				AB01B7041BC0F8FC00C6E72F /* Parse.framework */,
+				ABCCF02D1BC118B900B50AAF /* Bolts.framework */,
+				ABCCF02E1BC118B900B50AAF /* Parse.framework */,
 				AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */,
 				AB584BAF1BC0D0C500B8D3CF /* SystemConfiguration.framework */,
 				AB584BAD1BC0D0B700B8D3CF /* StoreKit.framework */,

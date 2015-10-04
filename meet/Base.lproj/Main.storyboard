@@ -63,7 +63,7 @@
         <!--SIGN UP-->
         <scene sceneID="m4f-yE-jhU">
             <objects>
-                <viewController storyboardIdentifier="Sign" id="xSa-UX-cs1" customClass="SignUpViewController" customModule="meet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="xSa-UX-cs1" customClass="SignUpViewController" customModule="meet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5OI-4G-10l"/>
                         <viewControllerLayoutGuide type="bottom" id="LAV-lU-TVA"/>
