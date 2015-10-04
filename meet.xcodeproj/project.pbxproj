@@ -23,6 +23,7 @@
 		AB584BAE1BC0D0B700B8D3CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BAD1BC0D0B700B8D3CF /* StoreKit.framework */; };
 		AB584BB01BC0D0C500B8D3CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BAF1BC0D0C500B8D3CF /* SystemConfiguration.framework */; };
 		AB584BB21BC0D0D300B8D3CF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */; };
+		AB584BB91BC0D77200B8D3CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		AB584BAF1BC0D0C500B8D3CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AB584BB11BC0D0D300B8D3CF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		AB584BB41BC0D16300B8D3CF /* meet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "meet-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				AB584B941BC0CDE200B8D3CF /* LaunchScreen.storyboard */,
 				AB584B971BC0CDE200B8D3CF /* Info.plist */,
 				AB584BB41BC0D16300B8D3CF /* meet-Bridging-Header.h */,
+				AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */,
 			);
 			path = meet;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB584BB91BC0D77200B8D3CF /* SignUpViewController.swift in Sources */,
 				AB584B8E1BC0CDE200B8D3CF /* ViewController.swift in Sources */,
 				AB584B8C1BC0CDE200B8D3CF /* AppDelegate.swift in Sources */,
 			);
