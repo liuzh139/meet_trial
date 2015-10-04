@@ -23,6 +23,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lko-kU-Ggf" kind="presentation" id="yRY-93-kvZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-MD-wvN">
                                 <rect key="frame" x="210" y="468" width="122" height="57"/>
@@ -97,12 +100,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYG-oS-z8m">
-                                <rect key="frame" x="56" y="145" width="100" height="100"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-LT-Lvl">
                                 <rect key="frame" x="176" y="178" width="143" height="33"/>
                                 <state key="normal" title="Upload Profile"/>
+                                <connections>
+                                    <action selector="selectProfilePhotoButtonTapped:" destination="xSa-UX-cs1" eventType="touchUpInside" id="K0f-Zr-4fm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrO-DB-UKd">
                                 <rect key="frame" x="56" y="469" width="263" height="45"/>
@@ -112,10 +115,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYG-oS-z8m">
+                                <rect key="frame" x="56" y="145" width="100" height="100"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SIGN UP" id="8KY-VF-MpW"/>
+                    <connections>
+                        <outlet property="profilePhotoImageView" destination="YYG-oS-z8m" id="OiH-ty-ss4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbd-Hl-peV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
