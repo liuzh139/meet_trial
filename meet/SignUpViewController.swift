@@ -10,7 +10,18 @@ import UIKit
 
 class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var profilePhotoImageView: UIImageView!
+   // @IBOutlet weak var profilePhotoImageView: UIImageView!
+    
+    @IBOutlet weak var userEmailAddressTextField: UITextField!
+    
+    @IBOutlet weak var userPasswordTextField: UITextField!
+    
+    @IBOutlet weak var userPasswordRepeatTextField: UITextField!
+    
+    @IBOutlet weak var userFirstNameTextField: UITextField!
+    
+    @IBOutlet weak var userLastNameTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,32 +34,66 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func selectProfilePhotoButtonTapped(sender: AnyObject) {
-        let pickerController = UIImagePickerController()
-        
-        //var presentViewController: UIViewController?
-        
-        pickerController.delegate = self
-        pickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        
-        //self.presentedViewController(pickerController, animated: true, completion: nil)
+//    @IBAction func selectProfilePhotoButtonTapped(sender: AnyObject) {
+//        let pickerController = UIImagePickerController()
+//        pickerController.delegate = self
+//        pickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+//        
+//       // self.presentedViewController(pickerController, animated: true, completion: nil)
+//    }
+    
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+//        profilePhotoImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//        
+//    }
+
+    @IBAction func cancelButtonTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        profilePhotoImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+    @IBAction func signUpButtonTapped(sender: AnyObject) {
+        let userName = userEmailAddressTextField.text
+        let userPassword = userPasswordTextField.text
+        let userPasswordRepeat = userPasswordRepeatTextField.text
+        let userFirstName = userFirstNameTextField.text
+        let userLastName = userLastNameTextField.text
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        let myUser = PFUser()
+        myUser.username = userName
+        myUser.password = userPassword
+        myUser.email = userName
+        myUser.setObject(userFirstName!, forKey: "first_name")
+        myUser.setObject(userLastName!, forKey: "last_name")
         
+//        let profileImageData = UIImageJPEGRepresentation(profilePhotoImageView.image!, )
+//        if profileImageData != nil {
+//            let profileImageFile = PFFile(data: profileImageData!)
+//            myUser.setObject(profileImageFile, forKey: "profile_picture")
+//        }
+        
+        myUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void
+            in
+            var userMessage = "Succed!"
+            
+            if !success {
+                userMessage = error!.localizedDescription
+            }
+            
+            let myAlert = UIAlertController(title: "Warning", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: { _ in
+                if success{
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            })
+            
+            myAlert.addAction(okAction)
+          //  self.presentedViewController(myAlert, animated: true, completion: nil)
+            
+        }
+    
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
