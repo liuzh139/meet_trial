@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzE-5F-IM4">
-                                <rect key="frame" x="42" y="468" width="122" height="57"/>
+                                <rect key="frame" x="42" y="468" width="141" height="57"/>
                                 <color key="backgroundColor" red="0.070588235289999995" green="0.47843137250000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="SIGN UP">
@@ -28,21 +28,38 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-MD-wvN">
-                                <rect key="frame" x="210" y="468" width="122" height="57"/>
+                                <rect key="frame" x="191" y="468" width="141" height="57"/>
                                 <color key="backgroundColor" red="0.086274509799999996" green="0.59215686270000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="UET-eE-SY0" eventType="touchUpInside" id="imE-X2-HT5"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dfr-ED-gg8">
+                                <rect key="frame" x="42" y="336" width="290" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="udA-nm-cpg">
+                                <rect key="frame" x="42" y="384" width="290" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="o6J-cI-wbx"/>
+                    <connections>
+                        <outlet property="userEmailAddressTextField" destination="dfr-ED-gg8" id="dGR-Ua-b0Q"/>
+                        <outlet property="userPasswordTextField" destination="udA-nm-cpg" id="mxD-zm-gvf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQv-hU-Pwr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780.5" y="688.5"/>
+            <point key="canvasLocation" x="-251.5" y="-577.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LCo-o5-0if">
@@ -61,7 +78,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YCS-CI-UBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245.5" y="682.5"/>
+            <point key="canvasLocation" x="163.5" y="-577.5"/>
         </scene>
         <!--SIGN UP-->
         <scene sceneID="m4f-yE-jhU">
@@ -75,30 +92,30 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="636"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26U-OO-wri">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26U-OO-wri">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="636"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-Wu-ax5">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-Wu-ax5">
                                         <rect key="frame" x="56" y="148" width="263" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reenter Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="W6P-Ys-4GZ">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reenter Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="W6P-Ys-4GZ">
                                         <rect key="frame" x="56" y="186" width="263" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-GM-57d">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-GM-57d">
                                         <rect key="frame" x="56" y="224" width="263" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GQC-Gj-6I8">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GQC-Gj-6I8">
                                         <rect key="frame" x="56" y="262" width="263" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrO-DB-UKd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrO-DB-UKd">
                                         <rect key="frame" x="56" y="300" width="263" height="45"/>
                                         <color key="backgroundColor" red="0.070588235289999995" green="0.47843137250000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -112,13 +129,14 @@
                                             <action selector="signUpButtonTapped:" destination="xSa-UX-cs1" eventType="touchUpInside" id="t9H-qq-hhw"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="btl-YZ-WSW">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="btl-YZ-WSW">
                                         <rect key="frame" x="56" y="110" width="263" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="btl-YZ-WSW" firstAttribute="top" secondItem="26U-OO-wri" secondAttribute="top" constant="110" id="0lQ-N6-Wx7"/>
                                     <constraint firstItem="ZrO-DB-UKd" firstAttribute="top" secondItem="GQC-Gj-6I8" secondAttribute="bottom" constant="8" symbolic="YES" id="98E-Kq-Ju2"/>
                                     <constraint firstItem="W6P-Ys-4GZ" firstAttribute="centerX" secondItem="26U-OO-wri" secondAttribute="centerX" id="Bjm-JY-1dM"/>
                                     <constraint firstItem="dOx-GM-57d" firstAttribute="trailing" secondItem="GQC-Gj-6I8" secondAttribute="trailing" id="GFY-wH-k8P"/>
@@ -126,7 +144,9 @@
                                     <constraint firstItem="dOx-GM-57d" firstAttribute="top" secondItem="W6P-Ys-4GZ" secondAttribute="bottom" constant="8" symbolic="YES" id="PRY-9o-kZm"/>
                                     <constraint firstItem="dOx-GM-57d" firstAttribute="leading" secondItem="GQC-Gj-6I8" secondAttribute="leading" id="Rao-gt-cRK"/>
                                     <constraint firstItem="GQC-Gj-6I8" firstAttribute="top" secondItem="dOx-GM-57d" secondAttribute="bottom" constant="8" symbolic="YES" id="Ua7-yt-C2s"/>
+                                    <constraint firstItem="btl-YZ-WSW" firstAttribute="leading" secondItem="26U-OO-wri" secondAttribute="leading" constant="56" id="V88-3l-a0A"/>
                                     <constraint firstItem="ZrO-DB-UKd" firstAttribute="trailing" secondItem="GQC-Gj-6I8" secondAttribute="trailing" id="ZVh-pP-zSM"/>
+                                    <constraint firstAttribute="trailing" secondItem="btl-YZ-WSW" secondAttribute="trailing" constant="56" id="fVp-yR-cVD"/>
                                     <constraint firstItem="ZpG-Wu-ax5" firstAttribute="top" secondItem="btl-YZ-WSW" secondAttribute="bottom" constant="8" symbolic="YES" id="gXn-M6-M2C"/>
                                     <constraint firstItem="dOx-GM-57d" firstAttribute="leading" secondItem="W6P-Ys-4GZ" secondAttribute="leading" id="gi6-0i-JMf"/>
                                     <constraint firstItem="ZrO-DB-UKd" firstAttribute="leading" secondItem="GQC-Gj-6I8" secondAttribute="leading" id="ljp-DN-Xlw"/>
@@ -167,12 +187,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbd-Hl-peV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780.5" y="1399"/>
+            <point key="canvasLocation" x="-251.5" y="165"/>
         </scene>
         <!--Main-->
         <scene sceneID="5Fe-EX-HMj">
             <objects>
-                <viewController id="WBr-db-aSd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="WBr-db-aSd" customClass="MainViewController" customModule="meet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yMd-6j-dtU"/>
                         <viewControllerLayoutGuide type="bottom" id="A7Q-Jf-4NW"/>
@@ -186,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGb-pY-gM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780.5" y="2105.5"/>
+            <point key="canvasLocation" x="-251.5" y="907.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cbo-63-imE">
@@ -205,7 +225,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fS1-9w-cen" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347.5" y="1399.5"/>
+            <point key="canvasLocation" x="158.5" y="143.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8zl-mY-Pum">
@@ -224,7 +244,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpY-e0-8h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347.5" y="2105.5"/>
+            <point key="canvasLocation" x="163.5" y="907.5"/>
         </scene>
     </scenes>
 </document>

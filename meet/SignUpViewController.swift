@@ -60,6 +60,25 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         let userFirstName = userFirstNameTextField.text
         let userLastName = userLastNameTextField.text
         
+        if (userName!.isEmpty || userPassword!.isEmpty || userPasswordRepeat!.isEmpty||userFirstName!.isEmpty || userLastName!.isEmpty){
+            let myAlert = UIAlertController(title: "Alert", message: "Please fill in required information.", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            myAlert.addAction(okAction)
+            //self.presentedViewController(myAlert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if userPassword != userPasswordRepeat! {
+            
+            let myAlert = UIAlertController(title: "Alert", message: "Password does not match!", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            myAlert.addAction(okAction)
+            //self.presentedViewController(myAlert, animated: true, completion: nil)
+            
+            return
+        }
+        
         let myUser = PFUser()
         myUser.username = userName
         myUser.password = userPassword
@@ -89,7 +108,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
             })
             
             myAlert.addAction(okAction)
-          //  self.presentedViewController(myAlert, animated: true, completion: nil)
+          //self.presentedViewController(myAlert, animated: true, completion: nil)
             
         }
     

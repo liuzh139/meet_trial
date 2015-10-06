@@ -24,6 +24,7 @@
 		AB584BB91BC0D77200B8D3CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCCF02F1BC118B900B50AAF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCCF02D1BC118B900B50AAF /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		ABCCF0301BC118B900B50AAF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCCF02E1BC118B900B50AAF /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		ABCCF0321BC3999000B50AAF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCF0311BC3999000B50AAF /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ABCCF02D1BC118B900B50AAF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		ABCCF02E1BC118B900B50AAF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ABCCF0311BC3999000B50AAF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AB584B971BC0CDE200B8D3CF /* Info.plist */,
 				AB584BB41BC0D16300B8D3CF /* meet-Bridging-Header.h */,
 				AB584BB81BC0D77200B8D3CF /* SignUpViewController.swift */,
+				ABCCF0311BC3999000B50AAF /* MainViewController.swift */,
 			);
 			path = meet;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				AB584BB91BC0D77200B8D3CF /* SignUpViewController.swift in Sources */,
 				AB584B8E1BC0CDE200B8D3CF /* ViewController.swift in Sources */,
 				AB584B8C1BC0CDE200B8D3CF /* AppDelegate.swift in Sources */,
+				ABCCF0321BC3999000B50AAF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Parse
-import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
         // [Optional] Power your app with Local Datastore. For more info, go to
         // https://parse.com/docs/ios_guide#localdatastore/iOS
@@ -28,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        let userName: String? = NSUserDefaults.standardUserDefaults().stringForKey("user_name")
+        
+        if userName != nil{
+            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let main: MainViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
+            let mainNav = UINavigationController(rootViewController: main)
+            
+            self.window?.rootViewController = mainNav
+            
+        }
 
         return true
     }
